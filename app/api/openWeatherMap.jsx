@@ -8,7 +8,6 @@ function getTemperature(location) {
       if(res.data.cod && res.data.message) {
         throw new Error(res.data.message);
       } else {
-        console.log(res.data.main.temp);
         return res.data.main.temp;
       }
     }, function(err) {
